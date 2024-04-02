@@ -1,6 +1,7 @@
 from pwn import *
 
-p = process("./aush")
+# p = process("./aush")
+p = remote("localhost", 9006)
 
 '''
 RBP-0xa0    args
