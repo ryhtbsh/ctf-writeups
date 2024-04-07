@@ -1,0 +1,4 @@
+ステガノグラフィー解析（image.png）
+$ strings ./cats.png | tail -n 1
+CAPTAINCASHMONEY
+Vigenèreでデコード
